@@ -1,0 +1,87 @@
+/* (1) ESTILOS GENERALES Y VARIABLES DE COLOR */
+:root {
+    --bg-color: #f0f8ff;      
+    --container-bg: #ffffff;  
+    --text-color: #4a4a4a;    
+    --primary-color: #a7c7e7; 
+    --code-bg: #e6e6fa;       
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* (2) CONTENEDOR PRINCIPAL */
+.container {
+    background-color: var(--container-bg);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px 40px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+/* (3) TÍTULOS Y TEXTOS */
+h1 {
+    color: var(--text-color);
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-weight: 500;
+    border-bottom: 2px solid var(--primary-color);
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-weight: 300;
+}
+
+/* (4) SECCIONES DE USO Y SALIDA */
+.usage, .output {
+    margin-bottom: 30px;
+}
+
+code {
+    background-color: var(--code-bg);
+    border-radius: 5px;
+    padding: 10px 15px;
+    display: block;
+    margin: 10px auto;
+    word-wrap: break-word;
+    font-size: 0.9em;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+code a {
+    color: inherit; 
+}
+
+/* (5) PIE DE PÁGINA */
+footer {
+    margin-top: 30px;
+    font-size: 0.9em;
+    font-weight: 300;
+}
